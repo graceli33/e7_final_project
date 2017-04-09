@@ -1,0 +1,19 @@
+function [best_path, points] = e7planets_player_nodes_no_obstacles(map)
+
+grid = map.grid;
+location = map.player.location(end,:);
+scraps = map.scraps.location;
+scraps_value = map.scraps.value;
+nodes = numel(scraps);
+num_moves = 0;
+distance_array = cell(nodes);
+
+%Calculate distance from starting point to each node.
+%Distance_array will have the starting point distance appended to the top
+
+
+for starting_poing = 1:nodes
+    for destination = 1:nodes
+        
+
+
